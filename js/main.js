@@ -52,6 +52,8 @@ setTimeout(function () {
   for (let i = 0; i < 5; i++) {
     inputsContainer.innerHTML += '<input type="text" id="input' + i + '"><br>';
   }
+  // button to check numbers
+  inputsContainer.innerHTML += '<button id="check">Check</button>';
 }, 10000);
 
 
