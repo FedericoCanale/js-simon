@@ -43,11 +43,16 @@ for (let i = 0; i < 5; i++) {
 // Show the numbers
 document.getElementById("numbers").innerHTML = "Numeri: " + generatedNumbers.join(" - ");
 
-// After 30 seconds, hide numbers and show inputs
+// After 10 seconds, hide numbers and show inputs
 setTimeout(function () {
   document.getElementById("numbers").innerHTML = "";
-}, 10000);
 
+  let inputsContainer = document.getElementById("inputs");
+    // show inputs
+  for (let i = 0; i < 5; i++) {
+    inputsContainer.innerHTML += '<input type="text" id="input' + i + '"><br>';
+  }
+}, 10000);
 
 
 
