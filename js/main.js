@@ -54,7 +54,23 @@ setTimeout(function () {
   }
   // button to check numbers
   inputsContainer.innerHTML += '<button id="check">Check</button>';
-}, 10000);
+  // add event listener
+  document.getElementById("check").addEventListener("click", function () {
+    let correctGuesses = [];
+    // add loop to push how many correct answers
+
+    for (let i = 0; i < 5; i++) {
+      let value = parseInt(document.getElementById("input" + i).value);
+      if (generatedNumbers.includes(value) && !correctGuesses.includes(value)) {
+        correctGuesses.push(value);
+      }
+    }
+    // print on page the results
+
+    document.getElementById("result").innerHTML =
+      "You guessed <strong>" + correctGuesses.length + "</strong> numbers correctly: " + correctGuesses.join(", ");
+  });
+}, 30000);
 
 
 
