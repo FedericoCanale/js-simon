@@ -44,7 +44,9 @@ for (let i = 0; i < 5; i++) {
 document.getElementById("numbers").innerHTML = "Numeri: " + generatedNumbers.join(" - ");
 
 // After 30 seconds, hide numbers and show inputs
-
+setTimeout(function () {
+  document.getElementById("numbers").innerHTML = "";
+}, 10000);
 
 
 
