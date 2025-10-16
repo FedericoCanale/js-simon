@@ -30,6 +30,22 @@ Se l’utente ha inserito qualcosa di non valido, segnaliamolo visivamente nel f
 */
 console.log('It Works');
 
+// Generate 5 random numbers
+let generatedNumbers = [];
+
+for (let i = 0; i < 5; i++) {
+  let number = Math.floor(Math.random() * 100) + 1;
+  generatedNumbers.push(number);
+  //console.log(generatedNumbers);
+  
+}
+
+// Show the numbers
+
+
+// After 30 seconds, hide numbers and show inputs
+
+
 
 
 
